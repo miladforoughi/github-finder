@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 const UserItem = ({ user: { login, avatar_url } }) => {
-  console.log('kir')
   return (
     <div className='card shadow-md compact side bg-base-100'>
       <div className='flex-row items-center space-x-4 card-body'>
@@ -17,7 +16,7 @@ const UserItem = ({ user: { login, avatar_url } }) => {
           <h2 className='card-title'>{login}</h2>
           <Link
             className='text-base-content text-opacity-40'
-            to={`/users/${login}`}
+            to={`/user/${login}`}
           >
             Visit Profile
           </Link>
